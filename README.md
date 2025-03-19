@@ -15,7 +15,11 @@
 1. 安装 [GKD](https://github.com/gkd-kit/gkd) APP
 2. 在 GKD 订阅管理中添加以下订阅地址：
 ```url
-https://github.com/jingkarqi/jjq_private_GKD_rules/raw/main/raw/jjq.json5
+https://raw.githubusercontent.com/jingkarqi/jjq_private_GKD_rules/main/raw/jjq.json5
+```
+3. 国内用户请使用以下订阅地址：
+```url
+https://hub.gitmirror.com/https://raw.githubusercontent.com/jingkarqi/jjq_private_GKD_rules/main/raw/jjq.json5
 ```
 
 ## 更新日志
