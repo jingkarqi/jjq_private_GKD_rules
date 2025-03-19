@@ -1,157 +1,161 @@
+// jjq的本地规则集配置文件
+// 用于广告屏蔽和功能优化
 {
-  "id": "6640",
-  "name": "jjq的本地规则集",
-  "version": "0.1",
-  "author": "jjq",
-  "checkUpdateUrl": "",
-  "supportUri": "",
-  "categories": [
+  id: '6640', // 规则集ID
+  name: 'jjq的本地规则集',
+  version: '0.1',
+  author: 'jjq',
+  checkUpdateUrl: '',
+  supportUri: '',
+  categories: [
     {
-      "key": "ad_block",
-      "name": "广告屏蔽"
-    }
+      key: 'ad_block',
+      name: '广告屏蔽',
+    },
   ],
-  "globalGroups": [],
-  "apps": [
+  globalGroups: [],
+  apps: [
     {
-      "id": "com.dragon.read",
-      "name": "番茄免费小说",
-      "groups": [
+      // 番茄免费小说应用配置
+      id: 'com.dragon.read',
+      name: '番茄免费小说',
+      groups: [
         {
-          "key": "0",
-          "name": "广告关闭",
-          "desc": "关闭广告弹窗",
-          "fastQuery": true,
-          "actionMaximum": 1,
-          "resetMatch": "app",
-          "rules": [
+          key: '0',
+          name: '广告关闭',
+          desc: '关闭广告弹窗',
+          fastQuery: true,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          rules: [
             {
-              "key": "1",
-              "name": "关闭广告按钮",
-              "action": "clickCenter",
-              "matches": [
-                "[name=\"android.widget.TextView\"][text=\"关闭此广告\"][text.length=5][clickable=true][focusable=true][checkable=false][checked=false][editable=false][longClickable=false][visibleToUser=true]"
+              key: '1',
+              name: '关闭广告按钮',
+              action: 'clickCenter',
+              matches: [
+                '[name="android.widget.TextView"][text="关闭此广告"][text.length=5][clickable=true][focusable=true][checkable=false][checked=false][editable=false][longClickable=false][visibleToUser=true]',
               ],
-              "snapshotUrls": ["", ""],
-              "exampleUrls": [""],
-              "activityIds": ["com.dragon.read.reader.ui.ReaderActivity"]
-            }
-          ]
-        }
-      ]
+              snapshotUrls: ['', ''],
+              exampleUrls: [''],
+              activityIds: ['com.dragon.read.reader.ui.ReaderActivity'],
+            },
+          ],
+        },
+      ],
     },
     {
-      "id": "com.klcxkj.zqxy",
-      "name": "趣智校园",
-      "groups": [
+      // 趣智校园应用配置
+      id: 'com.klcxkj.zqxy',
+      name: '趣智校园',
+      groups: [
         {
-          "key": "0",
-          "name": "结账广告",
-          "desc": "点击关闭洗澡结束广告",
-          "fastQuery": true,
-          "actionMaximum": 1,
-          "resetMatch": "app",
-          "rules": [
+          key: '0',
+          name: '结账广告',
+          desc: '点击关闭洗澡结束广告',
+          fastQuery: true,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          rules: [
             {
-              "key": "1",
-              "name": "左上角",
-              "action": "clickCenter",
-              "matches": [
-                "[id=\"com.klcxkj.zqxy:id/ad_close\"][desc=\"关闭\"][clickable=true]"
+              key: '1',
+              name: '左上角',
+              action: 'clickCenter',
+              matches: [
+                '[id="com.klcxkj.zqxy:id/ad_close"][desc="关闭"][clickable=true]',
               ],
-              "snapshotUrls": ["", ""],
-              "exampleUrls": [""],
-              "activityIds": ["com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity"]
+              snapshotUrls: ['', ''],
+              exampleUrls: [''],
+              activityIds: ['com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity'],
             },
             {
-              "key": "2",
-              "name": "关闭右上角广告规则",
-              "action": "clickCenter",
-              "matches": [
-                "[desc=\"top_close_button\"][clickable=true][name=\"android.view.ViewGroup\"]"
+              key: '2',
+              name: '关闭右上角广告规则',
+              action: 'clickCenter',
+              matches: [
+                '[desc="top_close_button"][clickable=true][name="android.view.ViewGroup"]',
               ],
-              "snapshotUrls": ["", ""],
-              "exampleUrls": [""],
-              "activityIds": ["com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity"]
+              snapshotUrls: ['', ''],
+              exampleUrls: [''],
+              activityIds: ['com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity'],
             },
             {
-              "key": "3",
-              "name": "关闭广告",
-              "action": "clickCenter",
-              "matches": [
-                "[name=\"android.view.ViewGroup\"][desc=\"top_close_button\"][clickable=true][focusable=true][visibleToUser=true][desc.length=16]"
+              key: '3',
+              name: '关闭广告',
+              action: 'clickCenter',
+              matches: [
+                '[name="android.view.ViewGroup"][desc="top_close_button"][clickable=true][focusable=true][visibleToUser=true][desc.length=16]',
               ],
-              "snapshotUrls": ["", ""],
-              "exampleUrls": [""],
-              "activityIds": ["com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity"]
+              snapshotUrls: ['', ''],
+              exampleUrls: [''],
+              activityIds: ['com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity'],
             },
             {
-              "key": "4",
-              "name": "右上角广告",
-              "action": "clickCenter",
-              "matches": [
-                "[id=\"com.klcxkj.zqxy:id/ms_activity_sdk_interstitial_cacel\"][name=\"android.widget.ImageView\"][clickable=true][focusable=true][visibleToUser=true]"
+              key: '4',
+              name: '右上角广告',
+              action: 'clickCenter',
+              matches: [
+                '[id="com.klcxkj.zqxy:id/ms_activity_sdk_interstitial_cacel"][name="android.widget.ImageView"][clickable=true][focusable=true][visibleToUser=true]',
               ],
-              "snapshotUrls": ["", ""],
-              "exampleUrls": [""],
-              "activityIds": ["com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity"]
+              snapshotUrls: ['', ''],
+              exampleUrls: [''],
+              activityIds: ['com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity'],
             },
             {
-              "key": "5",
-              "name": "关闭广告",
-              "action": "clickCenter",
-              "matches": [
-                "[name=\"android.view.ViewGroup\"][clickable=true][focusable=true][visibleToUser=true][left=168][top=618][right=266][bottom=716][width=98][height=98][childCount=1]"
+              key: '5',
+              name: '关闭广告',
+              action: 'clickCenter',
+              matches: [
+                '[name="android.view.ViewGroup"][clickable=true][focusable=true][visibleToUser=true][left=168][top=618][right=266][bottom=716][width=98][height=98][childCount=1]',
               ],
-              "snapshotUrls": ["", ""],
-              "exampleUrls": [""],
-              "activityIds": ["com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity"]
-            }
-          ]
+              snapshotUrls: ['', ''],
+              exampleUrls: [''],
+              activityIds: ['com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity'],
+            },
+          ],
         },
         {
-          "key": "1",
-          "name": "功能类-账单确认",
-          "desc": "点击关闭",
-          "fastQuery": true,
-          "actionMaximum": 1,
-          "resetMatch": "app",
-          "rules": [
+          key: '1',
+          name: '功能类-账单确认',
+          desc: '点击关闭',
+          fastQuery: true,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          rules: [
             {
-              "key": "1",
-              "name": "关闭按钮",
-              "action": "clickCenter",
-              "matches": [
-                "[id=\"com.klcxkj.zqxy:id/dialog_btn_cancel\"][text=\"关闭\"][clickable=true]"
+              key: '1',
+              name: '关闭按钮',
+              action: 'clickCenter',
+              matches: [
+                '[id="com.klcxkj.zqxy:id/dialog_btn_cancel"][text="关闭"][clickable=true]',
               ],
-              "snapshotUrls": ["", ""],
-              "exampleUrls": [""],
-              "activityIds": ["com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity"]
-            }
-          ]
+              snapshotUrls: ['', ''],
+              exampleUrls: [''],
+              activityIds: ['com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity'],
+            },
+          ],
         },
         {
-          "key": "2",
-          "name": "开始洗澡广告",
-          "desc": "点击关闭开始洗澡时的广告",
-          "fastQuery": true,
-          "actionMaximum": 1,
-          "resetMatch": "app",
-          "rules": [
+          key: '2',
+          name: '开始洗澡广告',
+          desc: '点击关闭开始洗澡时的广告',
+          fastQuery: true,
+          actionMaximum: 1,
+          resetMatch: 'app',
+          rules: [
             {
-              "key": "6",
-              "name": "开始广告关闭按钮",
-              "action": "clickCenter",
-              "matches": [
-                "[name=\"android.widget.ImageView\"][left=1131][top=1755][right=1216][bottom=1840][width=85][height=85][clickable=true][focusable=true][checkable=false][checked=false][editable=false][longClickable=false][visibleToUser=true][childCount=0]"
+              key: '6',
+              name: '开始广告关闭按钮',
+              action: 'clickCenter',
+              matches: [
+                '[name="android.widget.ImageView"][left=1131][top=1755][right=1216][bottom=1840][width=85][height=85][clickable=true][focusable=true][checkable=false][checked=false][editable=false][longClickable=false][visibleToUser=true][childCount=0]',
               ],
-              "snapshotUrls": ["", ""],
-              "exampleUrls": [""],
-              "activityIds": ["com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity"]
-            }
-          ]
-        }
-      ]
-    }
-  ]
+              snapshotUrls: ['', ''],
+              exampleUrls: [''],
+              activityIds: ['com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity'],
+            },
+          ],
+        },
+      ],
+    },
+  ],
 }
