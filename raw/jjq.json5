@@ -1,7 +1,7 @@
 {
     id: '640',
     name: 'jjq的本地规则集',
-    version: 11,
+    version: 91,
     author: 'jjq',
     checkUpdateUrl: '',
     supportUri: '',
