@@ -1,17 +1,10 @@
 {
-  "id": "6640",
+  "id": "640",
   "name": "jjq的本地规则集",
-  "version": "0.1",
+  "version": 11,
   "author": "jjq",
   "checkUpdateUrl": "",
   "supportUri": "",
-  "categories": [
-    {
-      "key": "ad_block",
-      "name": "广告屏蔽"
-    }
-  ],
-  "globalGroups": [],
   "apps": [
     {
       "id": "com.dragon.read",
