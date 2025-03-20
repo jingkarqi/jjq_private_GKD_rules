@@ -22,3 +22,8 @@ https://hub.gitmirror.com/https://raw.githubusercontent.com/jingkarqi/jjq_privat
 ## 问题反馈
 
 如有问题请提交 Issue
+
+## 更新
+2025.3.20
+新增趣智校园广告规则
+新增更新链接

@@ -3,7 +3,7 @@
     name: 'jjq的本地规则集',
     version: 91,
     author: 'jjq',
-    checkUpdateUrl: '',
+    checkUpdateUrl: 'https://github.com/jingkarqi/jjq_private_GKD_rules/raw/main/raw/jjq.json5',
     supportUri: '',
     apps: [
         {
@@ -142,6 +142,24 @@
                                 'com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity'
                             ],
                         },
+                        {
+                            key: '6',
+                            name: '关闭广告',
+                            action: 'clickCenter',
+                            matches: [
+                                '[name="android.widget.ImageView"][clickable=false][focusable=false][visibleToUser=true][left=987][top=463][right=1054][bottom=530][width=67][height=67][childCount=0]',
+                            ],
+                            snapshotUrls: [
+                                '',
+                                ''
+                            ],
+                            exampleUrls: [
+                                ''
+                            ],
+                            activityIds: [
+                                'com.klcxkj.zqxy.ui.device.apartment.net.BathingNetActivity'
+                            ],
+                        }
                     ],
                 },
                 {
