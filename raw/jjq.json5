@@ -1,7 +1,7 @@
 {
   id: '640',
   name: 'jjq的本地规则集',
-  version: 92,
+  version: 93,
   author: 'jjq',
   checkUpdateUrl: 'https://github.com/jingkarqi/jjq_private_GKD_rules/raw/main/raw/jjq.json5',
   supportUri: '',
