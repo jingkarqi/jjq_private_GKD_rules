@@ -220,5 +220,44 @@
                 },
             ],
         },
+        {
+            id: 'com.tencent.mobileqq',
+            name: 'QQ',
+            groups: [
+                {
+                    key: '0',
+                    name: '自定义自动点击',
+                    desc: '顺序点击规则',
+                    enable: true,
+                    rules: [
+                        {
+                            key: '1',
+                            name: '第一步-点击qbu按钮',
+                            action: 'clickCenter',
+                            matches: [
+                                '[id="com.tencent.mobileqq:id/qbu"][clickable=true]',
+                            ],
+                            snapshotUrls: [],
+                            activityIds: [
+                                'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity'
+                            ], 
+                        },
+                        {
+                            key: '2',
+                            preKeys: ['1'], 
+                            name: '第二步-点击指定区域',
+                            action: 'clickCenter',
+                            matches: [
+                                '[name="android.widget.FrameLayout"][clickable=true][childCount=1][width=495][height=163]',
+                            ],
+                            snapshotUrls: [],
+                            activityIds: [
+                                'com.qzone.reborn.feedpro.activity.QzoneFriendFeedProActivity'
+                            ],
+                        },
+                    ],
+                },
+            ],
+        },
     ],
 }
