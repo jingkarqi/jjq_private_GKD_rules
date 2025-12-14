@@ -179,13 +179,13 @@
       groups: [
         {
           key: '0',
-          name: '自定义自动点击',
+          name: '关闭空友爱看',
           desc: '顺序点击规则',
           enable: true,
           rules: [
             {
               key: '1',
-              name: '第一步-点击qbu按钮',
+              name: '第一步-点击推荐按钮',
               action: 'clickCenter',
               matches: ['[id="com.tencent.mobileqq:id/qbu"][clickable=true]'],
               snapshotUrls: [],
@@ -196,7 +196,7 @@
             {
               key: '2',
               preKeys: ['1'],
-              name: '第二步-点击指定区域',
+              name: '第二步-点击关闭推荐按钮',
               action: 'clickCenter',
               matches: [
                 '[name="android.widget.FrameLayout"][clickable=true][childCount=1][width=495][height=163]',
